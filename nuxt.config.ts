@@ -18,12 +18,15 @@ export default defineNuxtConfig({
     },
 
     css: [
-        '~/assets/css/tailwind.css',
+        // '~/assets/scss/tailwind.scss', // sass
+        // '~/assets/css/tailwind.css', // css
         // '~/assets/scss/variables.scss'
+        '~/assets/scss/fonts.scss',
+        '~/assets/scss/main.scss',
     ],
 
     tailwindcss: {
-        cssPath: '~/assets/css/tailwind.css',
+        cssPath: '~/assets/scss/tailwind.css',
         exposeConfig: true,
         config: {},
         injectPosition: 0,
