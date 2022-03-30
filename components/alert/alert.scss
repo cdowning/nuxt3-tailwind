@@ -1,0 +1,13 @@
+.alert {
+    background-color: antiquewhite;
+
+    &.is-info {
+        background-color: #bae6fd;
+    }
+    &.is-error {
+        background-color: #fee2e2;
+    }
+    &.is-warning {
+        background-color: #fef3c7;
+    }
+}

@@ -1,0 +1,52 @@
+/*========================================================================
+Button Styles
+- Button/Status Colors
+- Button Sizes
+- Button Shape (Pill, Rounded)
+- Disabled State
+- Buttons with text/icons
+========================================================================*/
+
+.btn {
+    @apply rounded-lg;
+
+    &.btn-sm {
+        @apply px-6 py-1;
+    }
+    &.btn-md {
+        @apply px-7 py-2;
+    }
+    &.btn-lg {
+        @apply px-8 py-3;
+    }
+    &.btn-xl {
+        @apply px-9 py-4;
+    }
+
+    // Color Status
+    &.btn-primary {
+        background-color: var(--btn-primary);
+        color: var(--btn-text-primary);
+    }
+    &.btn-secondary {
+        background-color: var(--btn-secondary);
+        color: var(--btn-text-primary);
+    }
+
+    // Outline Styles
+    &.btn-outlined {
+        border-width: 1px;
+        border-style: solid;
+        background-color: transparent;
+
+        &.btn-primary {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        &.btn-secondary {
+            border-color: var(--btn-secondary);
+            color: var(--btn-secondary);
+        }
+    }
+}
