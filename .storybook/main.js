@@ -61,7 +61,7 @@ module.exports = {
     },
     stories: [
         '../components/**/*.stories.@(js|jsx|ts|tsx)',
-        // '../components/**/*.stories.mdx',
+        '../components/**/*.stories.mdx',
         // '../stories/**/*.stories.mdx',
         // '../stories/**/*.stories.@(js|jsx|ts|tsx)',
     ],

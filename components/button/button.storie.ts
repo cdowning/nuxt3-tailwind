@@ -6,6 +6,10 @@ import Icon from '../icon/icon.vue';
 const colors = ['primary', 'secondary'];
 const sizes = ['sm', 'md', 'lg', 'xl'];
 
+const IconSlot = {
+    template: `<Icon name="icon" icon="envelope" />`,
+};
+
 export default {
     /* 👇 The title prop is optional.
      * See https://storybook.js.org/docs/vue/configure/overview#configure-story-loading
@@ -82,17 +86,18 @@ export default {
 };
 
 export const Template = (args: Args, { argTypes }: BaseArgType) => ({
-    // props: Object.keys(argTypes),
+    props: Object.keys(argTypes),
     components: { Button },
     setup() {
         return {
             args,
         };
     },
+
     template: `<Button v-bind="args">
         {{ args.default }}
         <template #icon>
-            <Icon name="icon" :icon="args.icon" />
+            ${args.slotTemplate}
         </template>
     </Button>`,
 });
@@ -102,6 +107,12 @@ export const Primary = Template.bind({});
 Primary.args = {
     text: 'hello there',
 };
+
+export const Seondary = Template.bind({});
+Seondary.args = {
+    slotTemplate: IconSlot.template,
+};
+console.log(IconSlot.template);
 
 // import type { Args, ArgType as BaseArgType } from '@storybook/addons';
 

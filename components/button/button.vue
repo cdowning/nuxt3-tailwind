@@ -4,7 +4,6 @@
         :disabled="disabled"
     >
         <span
-            v-if="hasIcon"
             :class="[
                 'button-icon',
                 iconPosition === 'left'

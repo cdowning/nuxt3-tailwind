@@ -39,7 +39,7 @@ export default {
     },
 
     setup(props, context) {
-        // props = reactive(props);
+        props = reactive(props);
         // const slots = reactive(context.slots);
 
         const buttonClasses = computed<object>(() => {

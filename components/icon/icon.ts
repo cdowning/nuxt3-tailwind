@@ -4,7 +4,7 @@ import SvgSprite from '../../assets/sprite/gen/icon-sprite.svg';
 // import SvgSprite from '~/assets/sprite/gen/icon-sprite.svg';
 
 export default {
-    name: 'MyIcon',
+    name: 'Icon',
     props: {
         icon: {
             type: String,

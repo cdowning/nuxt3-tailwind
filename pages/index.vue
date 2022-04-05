@@ -12,7 +12,7 @@
             icon-position="right"
         >
             <template #icon>
-                <MyIcon icon="envelope" />
+                <Icon icon="envelope" />
             </template>
             Hello There
         </Button>
@@ -20,7 +20,7 @@
 
         <Button status="primary" :class="['custom-button']">
             <template #icon>
-                <MyIcon icon="briefcase" />
+                <Icon icon="briefcase" />
             </template>
             Hello There
         </Button>
