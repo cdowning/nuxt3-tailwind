@@ -2,6 +2,10 @@ import { defineNuxtConfig } from 'nuxt3';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+    server: {
+        port: 4000, // default: 3000
+    },
+
     ssr: false,
 
     target: 'static',
@@ -26,10 +30,10 @@ export default defineNuxtConfig({
     ],
 
     tailwindcss: {
-        cssPath: '~/assets/scss/tailwind.css',
+        cssPath: '~/assets/scss/tailwind.scss',
         exposeConfig: true,
-        config: {},
-        injectPosition: 0,
+        // config: {},
+        // injectPosition: 0,
     },
 
     colorMode: {
